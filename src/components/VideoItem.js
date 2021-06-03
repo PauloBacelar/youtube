@@ -10,6 +10,7 @@ const VideoItem = (props) => {
       <img
         src={props.video.snippet.thumbnails.medium.url}
         className="ui image"
+        alt={props.video.snippet.title}
       />
       <div className="content">
         <div className="header">{props.video.snippet.title}</div>
